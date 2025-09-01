@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <div className="max-w-2xl text-center md:text-left">
                 <p className="text-lg mb-6">
-                  I'm a passionate Backend developer with a keen interest in AI and machine learning. With expertise in building modern web applications, I blend creativity and technology to deliver seamless user experiences.
+                  I am a passionate Backend developer with a keen interest in AI and machine learning. With expertise in building modern web applications, I blend creativity and technology to deliver seamless user experiences.
                 </p>
                 <h3 className="text-2xl font-semibold mb-4">Skills</h3>
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
