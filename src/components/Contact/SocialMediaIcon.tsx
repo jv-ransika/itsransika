@@ -33,13 +33,13 @@ const SocialMediaIcon = ({title, svg, href, filter} : ISocialMedia) => {
                 }}>
 
                     <Image
-                        alt='Icon'
-                        className={`${filter
-                        ? 'filter '
-                        : ''} icon`}
-                        width='100%'
-                        height='100%'
-                        src={svg || ''}/>
+  alt="Icon"
+  className={`${filter ? "filter " : ""} icon`}
+  src={svg || ""}
+  fill   // makes the image fill its parent container
+  style={{ objectFit: "contain" }} // keeps aspect ratio
+/>
+
                 </Box>
                 <Typography
                     variant='h3'

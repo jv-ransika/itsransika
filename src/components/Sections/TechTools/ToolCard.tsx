@@ -50,8 +50,8 @@ const ToolCard = ({title, svg, filter, className} : IToolCard) => {
                     className={`${filter
                     ? 'filter '
                     : ''} icon`}
-                    width='100%'
-                    height='100%'
+                    fill   // makes the image fill its parent container
+  style={{ objectFit: "contain" }} // keeps aspect ratio
                     src={`${svg}`}/>
             </Box>
             <Typography
