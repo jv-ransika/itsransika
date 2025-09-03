@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Hi, I'm Alex Doe, a Machine Learning Engineer.";
+  const fullText = "Hi, I'm JV Ransika";
   const speed = 70; // Typing speed in milliseconds
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Hero() {
             <span className="cursor"></span>
           </h1>
           <p className="subtitle">
-            Crafting intelligent solutions with data and code.
+            2nd Year AI Undergraduate @UOM
           </p>
           <Link href="/#projects" className="cta-button" onClick={(e) => {
             e.preventDefault();
