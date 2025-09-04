@@ -12,7 +12,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata = {
-  title: 'Alex Doe - Machine Learning Engineer Portfolio',
+  title: 'itsRansika',
   description: 'Alex Doe\'s personal portfolio showcasing expertise in Machine Learning, Deep Learning, and Data Science. Explore projects, experience, and skills.',
 };
 
