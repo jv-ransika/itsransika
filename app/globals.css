@@ -170,6 +170,8 @@ nav {
     justify-content: center;
     padding: 0 5%;
     background-color: var(--bg-color);
+    position: relative; /* This is crucial for positioning the scroll-down-indicator */
+    overflow: hidden; /* Prevent indicator from causing scrollbar issues if it peeks out */
 }
 
 .hero-container {
@@ -270,6 +272,59 @@ nav {
     margin-bottom: 2rem;
 }
 
+/* New styles for the scroll-down indicator */
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 30px; /* Distance from the bottom of the hero section */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    flex-direction: column; /* Stack arrow and text */
+    align-items: center;
+    gap: 8px; /* Space between arrow and text */
+    color: var(--primary-color); /* Match the primary theme color */
+    text-shadow: 0 0 10px var(--glow-color); /* Apply a subtle glow */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    animation: bounceUpDown 2s infinite ease-in-out; /* Add a subtle bounce animation */
+    z-index: 10; /* Ensure it's above background elements */
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 600;
+}
+
+.scroll-down-indicator:hover {
+    color: white; /* Brighter on hover */
+    transform: translateX(-50%) translateY(-5px); /* Slight lift on hover */
+    text-shadow: 0 0 15px var(--cyber-glow-color); /* Stronger glow on hover */
+}
+
+.scroll-down-indicator svg {
+    fill: currentColor; /* Inherit color from parent */
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease; /* Smooth arrow movement */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px); /* Move up 10px */
+    }
+}
+
+/* Optional: Hide "Scroll Down" text on very small screens if space is tight */
+@media (max-width: 480px) {
+    .scroll-down-indicator span {
+        display: none;
+    }
+    .scroll-down-indicator {
+        bottom: 20px;
+    }
+}
+
 /* Call to action button */
 .cta-button {
     display: inline-block;
@@ -337,6 +392,8 @@ nav {
 .hero-profile-pic {
     box-shadow: 0 0 25px var(--glow-color);
 }
+
+
 
 .about-text {
     flex: 1;

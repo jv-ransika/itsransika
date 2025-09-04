@@ -9,14 +9,11 @@ export default function About() {
       <div className="about-container">
         <div className="about-text">
           <p>
-            Hello! I'm Alex Doe, a passionate Machine Learning Engineer with a knack for turning complex data into actionable insights and robust AI solutions. My journey in tech started with a fascination for how computers can learn and adapt, leading me to specialize in machine learning, deep learning, and natural language processing.
-          </p>
+            Hi, I’m J.V. Ransika, an undergraduate at the University of Moratuwa, pursuing a degree in Artificial Intelligence. I’m deeply passionate about Artificial Intelligence, Robotics, and the Internet of Things (IoT), and I enjoy exploring how these technologies can come together to create smart, autonomous, and efficient systems.</p>
           <p>
-            With a solid foundation in Python, TensorFlow, and various data science libraries, I thrive on building scalable and efficient models that solve real-world problems. Whether it's predicting customer behavior, classifying images, or understanding text sentiment, I enjoy every step from data preprocessing to model deployment.
-          </p>
+            My interests lie in building intelligent solutions that bridge the gap between software and hardware — from AI-powered decision-making systems to IoT-driven automation and robotic platforms. I’m also keen on research and hands-on projects that push the boundaries of what’s possible in these fields.</p>
           <p>
-            Beyond the code, I'm a firm believer in continuous learning and collaboration. I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the community. Let's connect and build something amazing!
-          </p>
+            Beyond academics, I enjoy experimenting with new technologies, developing innovative projects, and collaborating with like-minded individuals to bring impactful ideas to life.</p>
 <br />
           <h3>Skills</h3>
 

@@ -6,7 +6,8 @@ import Link from 'next/link';
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Hi, I'm JV Ransika";
+  // Changed the name as requested
+  const fullText = "Hi, I'm JV Ransika"; 
   const speed = 70; // Typing speed in milliseconds
 
   useEffect(() => {
@@ -23,14 +24,26 @@ export default function Hero() {
     return () => clearInterval(typingInterval);
   }, []);
 
+  // Function to handle scrolling to the 'about' section
+  const handleScrollToAbout = (e) => {
+    e.preventDefault();
+    const targetElement = document.getElementById('about');
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 80, // Adjust for fixed header height
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-container">
-        {/* Apply .profile-pic (for size, border, radius, overflow) and .hero-profile-pic (for shadow) to the div wrapper */}
-        <div className="profile-pic hero-profile-pic"> 
+        {/* Profile picture moved to the beginning of hero-container */}
+        <div className="profile-pic hero-profile-pic">
           <Image
             src="/images/profile.jpg"
-            alt="Alex Doe Profile Picture"
+            alt="JV Ransika Profile Picture" // Updated alt text
             fill // Make the image fill its parent div
             priority
             sizes="250px" // Important for responsive image optimization
@@ -42,23 +55,20 @@ export default function Hero() {
             <span className="cursor"></span>
           </h1>
           <p className="subtitle">
-            2nd Year AI Undergraduate @UOM
+            2nd Year AI Undergraduate @UOM {/* Updated subtitle */}
           </p>
-          <Link href="/#projects" className="cta-button" onClick={(e) => {
-            e.preventDefault();
-            const targetElement = document.getElementById('projects');
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth',
-                });
-            }
-          }}>
-            View My Work
-          </Link>
+          {/* Removed the "View My Work" button */}
         </div>
-        
       </div>
+      
+      {/* Scroll Down Indicator */}
+      <Link href="/#about" className="scroll-down-indicator" onClick={handleScrollToAbout}>
+        {/* SVG for a down arrow icon */}
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+            <path d="M7 10l5 5 5-5z"/> 
+        </svg>
+        <span>Scroll Down</span> {/* Text label */}
+      </Link>
     </section>
   );
 }

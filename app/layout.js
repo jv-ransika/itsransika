@@ -13,7 +13,7 @@ const firaCode = Fira_Code({
 
 export const metadata = {
   title: 'itsRansika',
-  description: 'Alex Doe\'s personal portfolio showcasing expertise in Machine Learning, Deep Learning, and Data Science. Explore projects, experience, and skills.',
+  description: 'JV Ransika personal portfolio showcasing expertise in Machine Learning, Deep Learning, and Data Science. Explore projects, experience, and skills.',
 };
 
 export default function RootLayout({ children }) {
