@@ -16,7 +16,22 @@ export const projectsData = [
   ],
   githubLink: "https://github.com/jv-ransika/RL-OomiCardGame",
   liveDemoLink: null
-}
-,
+},
+{
+  id: "google-map-scraper",
+  title: "Google Map Scraper",
+  subtitle: "Automated web scraper to extract place details from Google Maps search queries.",
+  technologies: ["Python", "Selenium", "CSV"],
+  overview: "A Python-based web scraper that automates Google Maps searches to collect place details such as name, address, and contact information. The scraper uses Selenium WebDriver for automation and outputs results into a structured CSV file for easy use in further analysis or integration.",
+  features: [
+    "Automates Google Maps searches using Selenium WebDriver.",
+    "Extracts detailed place information including name, address, and contact details.",
+    "Input-driven scraping via input.csv and outputs data into output.csv.",
+    "Fully customizable for additional fields or integration with external tools.",
+    "Simple setup with pip-installable dependencies."
+  ],
+  githubLink: "https://github.com/jv-ransika/Google-Map-Scraper", 
+  liveDemoLink: null
+},
   
 ];
