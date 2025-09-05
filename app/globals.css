@@ -601,9 +601,12 @@ nav {
 
 /* Projects Section */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    /* Change from grid to flexbox */
+    display: flex; 
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards within the available space */
+    gap: 2rem; /* Keep the gap between cards */
+    /* Remove grid-template-columns as we are now using flexbox */
 }
 
 .project-card {
@@ -614,6 +617,11 @@ nav {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    /* --- Add Fixed Size Here --- */
+    width: 320px;  /* Define a fixed width */
+    height: 400px; /* Define a fixed height */
+    overflow: hidden; /* Important: Ensures content doesn't break out if it's too long */
+    /* ------------------------ */
 }
 .project-card:hover {
     transform: translateY(-5px);
@@ -633,7 +641,9 @@ nav {
     color: var(--primary-color);
 }
 .project-card p {
-    flex-grow: 1;
+    flex-grow: 1; /* This will make the paragraph take up available vertical space */
+    /* If content frequently overflows, consider `overflow-y: auto;` here,
+       but it would introduce scrollbars within the card. */
 }
 
 .project-tech {
@@ -652,11 +662,11 @@ nav {
 }
 
 .project-links a {
-    margin-right: 0; /* Remove unnecessary margin from original */
+    margin-right: 0;
     font-weight: 600;
-    display: block; /* Make it a block for full width button */
+    display: block;
     text-align: center;
-    margin-top: auto; /* Push to bottom of flex container */
+    margin-top: auto; /* Pushes the link button to the bottom of the fixed-height card */
 }
 
 /* Contact Section */

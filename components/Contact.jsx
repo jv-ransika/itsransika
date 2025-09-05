@@ -29,13 +29,13 @@ export default function Contact() {
         Feel free to reach out to me through any of the platforms below!
       </p>
       <div className="social-links">
-        <Link href="https://linkedin.com/in/alexdoe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <Link href="https://www.linkedin.com/in/j-v-ransika/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <LinkedInIcon />
         </Link>
-        <Link href="https://github.com/alexdoe" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <Link href="https://github.com/jv-ransika/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <GitHubIcon />
         </Link>
-        <Link href="mailto:alex.doe@example.com" aria-label="Email">
+        <Link href="mailto:jvgransika@gmail.com" aria-label="Email">
           <EmailIcon />
         </Link>
       </div>

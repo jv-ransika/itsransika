@@ -1,66 +1,38 @@
 // data/portfolio.js
 
 export const skillsData = [
-    "Python", "JavaScript", "React", "Next.js", "TensorFlow", "Keras",
-    "PyTorch", "Scikit-learn", "Pandas", "NumPy", "SQL", "Git", "Docker",
-    "AWS", "GCP", "Kubernetes", "HTML", "CSS", "Node.js", "Express.js"
+    "Python", "C","C++","SQL", "Git", "PHP", "Laravel", "Node.js"
 ];
 
 export const experienceData = [
     {
-        id: 1,
-        date: "2022 - Present",
-        title: "Senior Data Scientist",
-        company: "Tech Solutions Inc.",
-        description: "Led development of predictive models, improving customer retention by 15%. Designed and implemented ML pipelines for fraud detection.",
+    id: 1,
+    date: "2024 June - 2025 April",
+    title: "BackEnd Developer at Web and Technology Pillar",
+    company: "Moraspirit",
+    description: "Maintained MoraSpirit’s official website (moraspirit.com) and contributed to enhancing the backend and performance of sports.moraspirit.com. Developed a scalable backend for the Fit and Furious web application. Recognized as the Best Pillar Member for 2024–2025 for outstanding contributions."
     },
-    {
-        id: 2,
-        date: "2019 - 2022",
-        title: "Data Scientist",
-        company: "Innovate AI Labs",
-        description: "Built and deployed machine learning models for natural language processing. Collaborated with engineering teams to integrate models into production systems.",
-    },
-    {
-        id: 3,
-        date: "2017 - 2019",
-        title: "Junior ML Engineer",
-        company: "Data Insights Co.",
-        description: "Assisted in data cleaning, feature engineering, and model training. Developed dashboards for visualizing model performance.",
-    },
+
+
 ];
 
 export const educationData = [
     {
-        id: 1,
-        degree: "M.Sc. in Artificial Intelligence",
-        institution: "University of Tech",
-        year: "2017",
-        details: "Specialized in Deep Learning and Reinforcement Learning. Thesis on 'Generative Adversarial Networks for Image Synthesis'.",
-    },
-    {
         id: 2,
-        degree: "B.Sc. in Computer Science",
-        institution: "State University",
-        year: "2015",
-        details: "Focused on algorithms, data structures, and software engineering principles. Graduated with First Class Honors.",
+        degree: "B.Sc.(Hons) in Artificial Intelligence",
+        institution: "University of Moratuwa",
+        year: "2024 - 2028",
+        details: "Focused on algorithms, data structures, and software engineering principles.",
     },
 ];
 
 export const awardsData = [
     {
         id: 1,
-        title: "Best Paper Award",
-        issuer: "International AI Conference 2023",
-        description: "Recognized for innovative research in explainable AI.",
-        image: "/images/award1.png", 
-    },
-    {
-        id: 2,
-        title: "Machine Learning Hackathon Winner",
-        issuer: "Global Data Science Challenge",
-        description: "Led a team to develop a novel solution for real-time anomaly detection.",
-        image: "/images/award2.png",
+        title: "Best Pillar Member – Web and Technology Pillar",
+        issuer: "Moraspirit",
+        description: "Received the Best Pillar Member Award for the year 2024–2025 in the Web and Technology Pillar at MoraSpirit, the official sports media platform of the University of Moratuwa.",
+        image: "/images/award1.jpg", 
     },
 ];
 
@@ -70,4 +42,4 @@ export const galleryImages = [
     { id: 3, src: "/images/gallery3.jpg", alt: "AI System Diagram", className: "item-3" },
     { id: 4, src: "/images/gallery4.jpg", alt: "Neural Network", className: "item-4" },
     { id: 5, src: "/images/gallery5.jpg", alt: "Big Data Analytics", className: "item-5" },
-];
+];  
