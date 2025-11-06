@@ -17,6 +17,26 @@ export const projectsData = [
     githubLink: "https://github.com/jv-ransika/RL-OomiCardGame",
     liveDemoLink: null
   },
+
+    {
+    id: "story-engine",
+    title: "Multi‑Agent Storyworld Simulator ",
+    subtitle: "Stateful, multi‑agent narrative simulation with resumable episodic workflows and per‑character memory.",
+    technologies: ["Python", "Pydantic", "LangGraph", "SQLite"],
+    overview: "A Python-based narrative simulation platform that orchestrates autonomous character agents, an environment workflow, and a story initializer to produce goal-directed, episodic narratives. Uses state-graph workflows and Pydantic models for robust state management, and SQLite checkpointing for pause/resume and reproducibility. LLM backends are pluggable so agents can be driven by Google Generative models or other providers.",
+    features: [
+      "Multi-agent orchestration: separate agents for story initialization, environment orchestration, and character behavior.",
+      "Stateful workflow design using LangGraph; scenes, moments, and goal checks are represented in a compiled workflow.",
+      "Per-character memory units (short/long-term) modelled with Pydantic to influence agent decisions and create emergent behavior.",
+      "Checkpointing and resumability via SQLite (SqliteSaver) with thread‑scoped namespaces (thread_id environment variable).",
+      "Pluggable LLM backends (Google Generative API or other providers) to drive agent responses.",
+      "CLI driver (main.py) to start a fresh story or resume from checkpoints; easy to extend for experiments and tests.",
+      "Designed for reproducibility and testability — supports mocking LLMs for CI and offline tests.",
+      "Extensible data models and workflows for adding new agent types, scene validators, or external integrations."
+    ],
+    githubLink: "https://github.com/jv-ransika/story_engine",
+    liveDemoLink: null
+  },
   {
     id: "google-map-scraper",
     title: "Google Map Scraper",
@@ -34,24 +54,6 @@ export const projectsData = [
     liveDemoLink: null
   },
 
-  {
-    id: "story-engine",
-    title: "Multi‑Agent Storyworld Simulator ( Ongoing )",
-    subtitle: "Stateful, multi‑agent narrative simulation with resumable episodic workflows and per‑character memory.",
-    technologies: ["Python", "Pydantic", "LangGraph", "SQLite", "Google Generative API (LLM integrations)", "LangChain-style messaging", "Git"],
-    overview: "A Python-based narrative simulation platform that orchestrates autonomous character agents, an environment workflow, and a story initializer to produce goal-directed, episodic narratives. Uses state-graph workflows and Pydantic models for robust state management, and SQLite checkpointing for pause/resume and reproducibility. LLM backends are pluggable so agents can be driven by Google Generative models or other providers.",
-    features: [
-      "Multi-agent orchestration: separate agents for story initialization, environment orchestration, and character behavior.",
-      "Stateful workflow design using LangGraph; scenes, moments, and goal checks are represented in a compiled workflow.",
-      "Per-character memory units (short/long-term) modelled with Pydantic to influence agent decisions and create emergent behavior.",
-      "Checkpointing and resumability via SQLite (SqliteSaver) with thread‑scoped namespaces (thread_id environment variable).",
-      "Pluggable LLM backends (Google Generative API or other providers) to drive agent responses.",
-      "CLI driver (main.py) to start a fresh story or resume from checkpoints; easy to extend for experiments and tests.",
-      "Designed for reproducibility and testability — supports mocking LLMs for CI and offline tests.",
-      "Extensible data models and workflows for adding new agent types, scene validators, or external integrations."
-    ],
-    githubLink: "https://github.com/jv-ransika/story_engine",
-    liveDemoLink: null
-  }
+
 
 ];

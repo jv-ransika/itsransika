@@ -603,7 +603,7 @@ nav {
 .project-grid {
     /* Change from grid to flexbox */
     display: flex; 
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    /*flex-wrap: wrap; *//* Allow cards to wrap to the next line */
     justify-content: center; /* Center the cards within the available space */
     gap: 2rem; /* Keep the gap between cards */
     /* Remove grid-template-columns as we are now using flexbox */
@@ -619,7 +619,7 @@ nav {
     flex-direction: column;
     /* --- Add Fixed Size Here --- */
     width: 320px;  /* Define a fixed width */
-    height: 400px; /* Define a fixed height */
+    height: 470px; /* Define a fixed height */
     overflow: hidden; /* Important: Ensures content doesn't break out if it's too long */
     /* ------------------------ */
 }
