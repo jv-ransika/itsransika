@@ -23,17 +23,16 @@ export const projectsData = [
     title: "Multi‑Agent Storyworld Simulator ",
     subtitle: "Stateful, multi‑agent narrative simulation with resumable episodic workflows and per‑character memory.",
     technologies: ["Python", "Pydantic", "LangGraph", "SQLite"],
-    overview: "A Python-based narrative simulation platform that orchestrates autonomous character agents, an environment workflow, and a story initializer to produce goal-directed, episodic narratives. Uses state-graph workflows and Pydantic models for robust state management, and SQLite checkpointing for pause/resume and reproducibility. LLM backends are pluggable so agents can be driven by Google Generative models or other providers.",
-    features: [
-      "Multi-agent orchestration: separate agents for story initialization, environment orchestration, and character behavior.",
-      "Stateful workflow design using LangGraph; scenes, moments, and goal checks are represented in a compiled workflow.",
-      "Per-character memory units (short/long-term) modelled with Pydantic to influence agent decisions and create emergent behavior.",
-      "Checkpointing and resumability via SQLite (SqliteSaver) with thread‑scoped namespaces (thread_id environment variable).",
-      "Pluggable LLM backends (Google Generative API or other providers) to drive agent responses.",
-      "CLI driver (main.py) to start a fresh story or resume from checkpoints; easy to extend for experiments and tests.",
-      "Designed for reproducibility and testability — supports mocking LLMs for CI and offline tests.",
-      "Extensible data models and workflows for adding new agent types, scene validators, or external integrations."
-    ],
+    "overview": "A multi-agent AI system for persistent, character-driven narratives that automates content generation. It uses a sophisticated orchestration system where specialized AI agents (for initialization, environment orchestration, and character behavior) collaborate to create emergent, goal-driven stories. Built on LangGraph, SQLite, and Pydantic, it features state synchronization and persistent execution, allowing stories to be paused and resumed from an exact checkpoint.",
+  "features": [
+    "Multi-agent orchestration: 6+ specialized agents working in coordinated workflows, organized into Initialization, Environment, and Character layers.",
+    "Autonomous character agents: Each character has autonomous agents with individual memory, making independent decisions that influence story outcomes.",
+    "Persistent narratives: Allows stories to be paused and resumed from the exact checkpoint with no data loss, using SQLite.",
+    "Per-character memory: Agents maintain short/long-term memory (115-250 events) and reference past events.",
+    "Goal-driven stories: Narratives progress toward defined objectives, with validation agents (Scene Validator, Final Goal Validator) to pace the flow.",
+    "Emergent interactions: Complex character behaviors emerge from well-designed agent coordination.",
+    "Technology stack: Built on proven technologies (LangGraph, SQLite, Pydantic) for production-ready error handling and state management."
+  ],
     githubLink: "https://github.com/jv-ransika/story_engine",
     liveDemoLink: null
   },
