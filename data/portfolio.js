@@ -7,13 +7,19 @@ export const skillsData = [
 export const experienceData = [
     {
     id: 1,
+    date: "2026 February - Present",
+    title: "AI Engineer Intern",
+    company: "JYC - Jaya Consulting Inc",
+    description: `Architected and piloted Generative AI proof-of-concepts using LLMs for enterprise applications. Designed data architectures and engineered lightweight applications and APIs to enhance data delivery to LLM endpoints. Conducted technical market research on AI orchestration frameworks to support strategic business development initiatives.`,
+    },
+    {
+    id: 2,
     date: "2024 June - 2025 April",
     title: "BackEnd Developer at Web and Technology Pillar",
     company: "Moraspirit",
     description: "Maintained MoraSpirit’s official website (moraspirit.com) and contributed to enhancing the backend and performance of sports.moraspirit.com. Developed a scalable backend for the Fit and Furious web application. Recognized as the Best Pillar Member for 2024–2025 for outstanding contributions."
     },
-
-
+    
 ];
 
 export const educationData = [
